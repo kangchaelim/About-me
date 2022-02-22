@@ -1,0 +1,36 @@
+/* init */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul,li {list-style: none;}
+a{text-decoration: none;color: inherit;}
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* font */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Montagu+Slab:wght@300&family=Noto+Sans+KR&family=Roboto:wght@700&display=swap');
+
+/* re */
+.po-re {position: relative;}
+.po-ab {position: absolute;}
+.dis-flex {display: flex;}
+.hidden{display: none;}
+.block{display: block;}
+.opa-0 {opacity: 0;}
+.opa-1 {opacity: 1;}
+
+/* layout */
+/* container */
+.container {
+    width: 600vw;
+    height: 100vh;
+}
+
+/* section */
+section {
+    width:  100vw;
+    height: 100vh;
+    /* border: 1px solid red; */
+    background-color: #fff;
+} 

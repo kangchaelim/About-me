@@ -1,0 +1,89 @@
+/* main text */
+#main div {
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 3s;
+    /* position: fixed; */
+}
+
+#main div:nth-child(2) {
+    margin-top: 0vh;
+    transition: 2s;
+}
+
+#main div:nth-child(4) {
+    /* margin-top: 0vh; */
+    transition: 1.5s;
+}
+
+/* section 글자 떨어질 때 */
+.down {
+    transition: 1.5s;
+}
+
+/* #main div {
+    width: 40vw;
+    height: 30vh;
+    border: 1px solid red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 30vh;
+    font-size: 4rem;
+}
+
+#main div:first-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 100;
+}
+
+#main div:last-child {
+    font-family: 'Cinzel', serif;
+}
+
+#main div span {
+    color: #fc073f;
+    transform: rotateX(-180deg);
+} */ 
+/* main text 자리잡기 */
+/* i am different */
+/* #main div:first-child p:first-child {
+    left: 10vw;
+}
+
+#main div:first-child p:last-child {
+    right: 10vw;
+}
+#main div:first-child span {
+    left: 17.8vw;
+} */
+/* chaerumi folio */
+/* #main div:last-child span:first-child {
+    left: 3vw;
+}
+
+#main div:last-child p:last-child {
+    right: 3vw;
+}
+
+#main div:last-child span:last-child {
+    left: 20vw;
+}
+
+#main div:last-child p:first-child {
+    right: 3vw;
+} */
+/* #main div:last-child span:first-child {
+    top: -0.5vh;
+    left: 3.5vw;
+}
+
+#main div:last-child span:last-child {
+    top: -0.5vh;
+    right: 12vw;
+} */
