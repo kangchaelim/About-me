@@ -16,6 +16,28 @@
     left: 4vw;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07), 0 6px 22px 0 rgba(0, 0, 0, 0.07);
     overflow: hidden;
+    text-align: center;
+}
+
+.box .cover {
+    width: 28vw;
+    height: 32vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 1s;
+    z-index: 1;
+}
+
+.box .img .icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    color: rgba(0, 0, 0, 0);
+    z-index: 2;
+}
+
+.box .img:hover .icon{
+    color: #fc073f;
 }
 
 .box .txt {

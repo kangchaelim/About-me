@@ -1,5 +1,5 @@
 // 가로스크롤
-const container = document.getElementById('container');
+const container = document.querySelector('.container');
 console.log(container);
 console.dir(container);
 
