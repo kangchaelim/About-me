@@ -79,6 +79,13 @@
     transform: translate(-50%,-50%);
 }
 
+.boxTwo .contents .symbol {
+    width: 150%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 /* Four works 확대*/
 .works img {
     transition: 0.5s;
