@@ -1,0 +1,39 @@
+/* notice */
+#notice {
+    width: 100%;
+    height: 67vh;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 230px;
+}
+
+#notice h5 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 70px;
+}
+
+#notice a {
+    font-size: 0.9em;
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+#notice a:hover {
+    color: rgb(197, 197, 197);
+}
+
+#notice p {
+    font-size: 0.8em;
+    margin-top: 45px;
+    line-height: 1.7em;
+}
+
+#icon {
+    margin-bottom: 50px;
+}
+
+#icon img {
+    width: 4%;
+    margin-right: 8px;
+}

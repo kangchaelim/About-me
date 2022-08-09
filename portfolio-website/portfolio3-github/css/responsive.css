@@ -1,0 +1,147 @@
+/* 태플릿 모드 */
+@media screen and (max-width:1400px) {
+    /* 1400px ~ 1024px 사이 */
+    /* main */
+    .quotes {font-size: 1.5rem;}
+    .bear {width: 120%; margin-top: -25px;}
+    .bookshelf div:last-child .clock {width: 60%;}
+    .bookshelf div:last-child .book6 {right: 25px}
+    .bookshelf {margin-top: 260px;}
+    /* section.about */
+    .about h3 {font-size: 1.8rem;}
+    .about p {font-size: 1.4rem; line-height: 2.2rem;}
+    .about b {font-size: 1.4rem; line-height: 2.2rem;}
+    /* section.selection */
+    section.selection .selectionBox {margin-top: 300px;}
+    .selectionBox div div {width: 230px; height: 230px;}
+    section.selection a span::after {font-size: 1.5rem;}
+    .selection h3 {font-size: 1.5rem; top: 57%; left: 17%; transform: translate(-17%, -57%); transform: rotate(16deg); z-index: 1; }
+    /* section.selectionTwo */
+    .selectionTwo .yellow-shelf {height: 10px;}
+    .selectionTwo .memo1 {width: 20%;}
+    .selectionTwo .memo2 {width: 20%;}
+    .selectionTwo .memo3 {width: 20%;}
+    .selectionTwo .bookshelfTwo {left: 100px;}
+    .selectionTwo h3 {font-size: 1.5rem;}
+    /* section.exhibition */
+    .exhibition h3 {font-size: 1.5rem;}
+    .exhibition p {font-size: 1.3rem;}
+    /* footer */
+    footer span {font-size: 0.7rem;}
+    footer b {font-size: 0.7rem;}
+}
+
+@media screen and (max-width:1000px) {
+    /* 1000px ~ 768px 사이 */
+    /* main */
+    .quotes {font-size: 1.4rem; margin-top: 150px;}
+    .bear {width: 65%; margin-top: -40px;}
+    .bookshelf div:last-child .clock {width: 40%;}
+    .bookshelf div:last-child .book6 {right: 60px}
+    .bookshelf {margin-top: 20px;}
+    /* section.about */
+    .about .introduce {width: 750px;}
+    .about img {width: 100%;}
+    .about h3 {font-size: 1.7rem;}
+    .about p {font-size: 1.3rem; line-height: 2.1rem;}
+    .about b {font-size: 1.3rem; line-height: 2.1rem;}
+    /* section.selection */
+    section.selection {height: 70vh;}
+    section.selection .selectionBox>div:last-child {margin-top: 20px; left: 0;}
+    .selection .selectionBox>div:first-child {right: 0;}
+    .selection h3 {font-size: 1.4rem;}
+    section.selection a span::after {font-size: 1.4rem;}
+    /* section.selectionTwo */
+    .selectionTwo .memo1 {left: 20px;}
+    .selectionTwo .memo2 {left: 250px;}
+    .selectionTwo .memo3 {right: 10px;}
+    .selectionTwo .bookshelfTwo {left: 60px; top: 350px;}
+    .selectionTwo h3 {font-size: 1.4rem;}
+    /* section.exhibition */
+    .exhibition>div>div:first-child {padding-top: 90px;}
+    .exhibition>div>div:last-child {padding-top: 90px;}
+    .exhibition .sticker2 {top: 40px; left: 50px;}
+    .exhibition h3 {font-size: 1.4rem;}
+    .exhibition p {font-size: 1.3rem;}
+    /* footer */
+    footer span {font-size: 0.6rem;}
+    footer b {font-size: 0.6rem;}
+    footer {padding-top: 80px;}
+}
+
+/* 모바일 모드 */
+@media screen and (max-width:767px){
+    /* main */
+    .quotes {font-size: 1.3rem; margin-top: 130px;}
+    .bear {width: 90%; margin-top: -35px;}
+    .bookshelf div:last-child .clock {width: 60%;}
+    .bookshelf div:last-child .book6 {right: 30px}
+    .bookshelf {margin-top: 5px;}
+    /* section.about */
+    .about .introduce {width: 550px;}
+    .about h3 {font-size: 1.6rem;}
+    .about p {font-size: 1rem; line-height: 1.8rem;}
+    .about b {font-size: 1rem; line-height: 1.8rem;}
+    /* section.selection */
+    section.selection a span::after {font-size: 1.3rem;}
+    .selection h3 {font-size: 1.3rem;}
+    /* section.selectionTwo */
+    .selectionTwo .memo1 {width: 25%; left: 20px;}
+    .selectionTwo .memo2 {width: 25%; left: 180px;}
+    .selectionTwo .memo3 {width: 25%; right: 20px;}
+    .selectionTwo .bookshelfTwo {width: 400px; left: 40px; top: 250px;}
+    .selectionTwo {height: 60vh;}
+    .book-right-box {width: 100px; height: 100px;}
+    .book-left-box {width: 100px; height: 100px;}
+    .selectionTwo h3 {font-size: 1.3rem;}
+    .bookshelfTwo a {top: 85%; left: 50%; transform: translate(-50%, -85%);}
+    /* section.exhibition */
+    .exhibition {height: 80vh;}
+    .exhibition>div>div:first-child {padding-top: 100px;}
+    .exhibition>div>div:last-child {padding-top: 100px;}
+    .exhibition .sticker2 {width: 35%; top: 60px; left: 0px;}
+    .exhibition h3 {font-size: 1.3rem;}
+    .exhibition p {font-size: 1.2rem;}
+    .exhibition-img {width: 80%;}
+    /* footer */
+    footer {padding-top: 100px;}
+}
+
+/* 320 모바일 모드 */
+@media screen and (max-width:320px) {
+    /* main */
+    .quotes {font-size: 1.2rem; margin-top: 140px;}
+    .bear {width: 120%; margin-top: -25px;}
+    .bookshelf div:last-child .clock {width: 70%;}
+    .bookshelf div:last-child .book6 {right: 15px}
+    .bookshelf {margin-top: 5px;}
+    /* section.about */
+    .about h3 {font-size: 1.4rem;}
+    .about p {font-size: 0.8rem; line-height: 1.7rem;}
+    .about b {font-size: 0.8rem; line-height: 1.7rem;}
+    /* section.selection */
+    section.selection {height: 50vh;}
+    section.selection a span::after {font-size: 1.2rem;}
+    .selection h3 {font-size: 1.2rem;}
+    /* section.selectionTwo */
+    .selectionTwo .memo1 {width: 30%; left: 20px;}
+    .selectionTwo .memo2 {width: 30%; left: 100px;}
+    .selectionTwo .memo3 {width: 30%; right: 20px;}
+    .selectionTwo .bookshelfTwo {width: 280px; left: 0px; top: 250px;}
+    .selectionTwo {height: 60vh;}
+    .book-right-box {width: 70px; height: 70px;}
+    .book-left-box {width: 70px; height: 70px;}
+    .selectionTwo h3 {font-size: 1.1rem;}
+    .bookshelfTwo a {top: 90%; left: 50%; transform: translate(-50%, -90%);}
+     /* section.exhibition */
+     .exhibition {height: 70vh;}
+     .exhibition>div>div:first-child {padding-top: 80px;}
+     .exhibition>div>div:last-child {padding-top: 80px;}
+     .exhibition .sticker2 {width: 35%; top: 40px; left: 0px;}
+     .exhibition h3 {font-size: 1.2rem;}
+     .exhibition p {font-size: 1.1rem;}
+     /* footer */
+     footer {padding-top: 60px;}
+     footer span {font-size: 0.5rem;}
+     footer b {font-size: 0.5rem;}
+}

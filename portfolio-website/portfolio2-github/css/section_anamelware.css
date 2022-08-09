@@ -1,0 +1,68 @@
+/* anamelware */
+#anamelware {
+    width: 100%;
+    height: 95vh;
+    /* border: 1px solid red; */
+}
+
+#anamelware-txt {
+    top: 170px;
+    left: 10%
+    /* border: 1px solid red; */
+}
+
+#anamelware-txt h4{
+    font-size: 2em;
+    font-weight: lighter;
+    margin-top: 65px;
+    margin-left: 85px;
+}
+
+#anamelware-txt h4 span {
+    font-weight: 500;
+}
+
+#anamelware-txt h5 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-left: 130px;
+}
+
+#anamelware-txt p {
+    font-size: 0.9em;
+    line-height: 1.7em;
+    margin-left: 135px;
+}
+
+#circle {
+    top: 32px;
+    left: 40px;
+}
+
+#anamelware img {
+    position: absolute;
+}
+
+#anamelware #anamelware-imgbox {
+    width: 30%;
+    height: 75vh;
+    /* border: 1px solid red; */
+    bottom: 0;
+    right: 10%;
+}
+
+#anamelware-img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);    
+}
+
+#sticker1 {
+    top: 23px;
+    left: 30px;
+}
+
+#sticker2 {
+    bottom: 15px;
+    right: 50px;
+}

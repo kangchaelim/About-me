@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Corinthia:wght@400;700&family=Crimson+Text:wght@400;700&family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*reset*/
+* {margin: 0;padding: 0; box-sizing: border-box;}
+a {color: inherit; text-decoration: inherit; border: none;}
+img {vertical-align: middle; border: none;}
+ul, li {list-style: none;}
+
+/*Layout*/
+body {font-family: 'nanumsquare'; font-size: 14px;}
+.wrap {overflow: hidden;}
+.en0 {font-family: 'Crimson Text', serif;}
+.en1 {font-family: 'Bebas Neue', cursive;}
+.en2 {font-family: 'Corinthia', cursive;}
+.en3 {font-family: 'Roboto', sans-serif;}
+
+/* section.visual */
+section.visual {max-width: 100%; height: 100vh; margin: auto; overflow: hidden; background: #f3de85; position: relative;}
+section.visual .mainImg {position: relative; height: 50%; top: 23%;}
+section.visual .mainImg .smile {position: absolute; left: 50%; transform: translateX(-50%);}
+section.visual .mainImg .logo {position: absolute; left: 50%; transform: translateX(-50%);}
+section.visual .mainImg p:nth-child(2) {top: 35%;}
+section.visual .mainImg p:nth-child(3) {top: 45%;}
+section.visual .mainImg p:nth-child(4) {top: 55%;}
+section.visual .subImg img {position: absolute;}
+section.visual .subImg img:nth-child(1) {right: 0; top: 0; z-index: 1; animation-name: flowerAniRight; animation-duration: 20s; animation-iteration-count: infinite;}
+section.visual .subImg img:nth-child(2) {right: 130px; top: 0; animation-name: flowerAniLeft; animation-duration: 20s; animation-iteration-count: infinite;}
+section.visual .subImg img:nth-child(3) {right: 0px; top: 145px; animation-name: flowerAniLeft; animation-duration: 20s; animation-iteration-count: infinite;}
+section.visual .subImg img:nth-child(4) {left: 0; bottom: 0; animation-name: flowerAniRight; animation-duration: 20s; animation-iteration-count: infinite;}
+section.visual .subImg img:nth-child(5) {left: 135px; bottom: 0; animation-name: flowerAniLeft; animation-duration: 20s; animation-iteration-count: infinite;}
+section.visual .mainTxt {position: absolute; left: 50%; transform: translateX(-50%); bottom: 70px;}
+
+/*visual .logo애니*/
+.visual .mainImg.motion p{animation-name: logoAni; animation-duration: 2.5s;}
+.visual .mainImg.motion p:nth-child(3){animation-duration: 0.9s;}
+.visual .mainImg.motion p:nth-child(2){animation-duration: 1.1s;}
+.visual .mainImg.motion p:nth-child(4){animation-duration: 1.3s;}
+
+@keyframes logoAni {
+    0%{transform: scale(0.4); opacity: 0;}
+    50%{transform: scale(0.4); opacity: 0;}
+}
+
+/* visual .subImg 꽃 애니 */
+@keyframes flowerAniRight {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes flowerAniLeft {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(-360deg);}
+}
+
+/* section.new */
+section.new {height: 100vh; background: url(../img/section1/christmasBg.jpg)no-repeat center/cover; position: relative; overflow: hidden;}
+section.new .inner {width: 100% ; position: relative; margin: 100px auto;}
+section.new .inner .title div:nth-child(1) {position: absolute; font-family: 'GmarketSansLight'; font-size: 2rem; color: #fff; left: 50%; transform: translateX(-50%); font-weight: bold;}
+section.new .inner .title div:nth-child(1) b {color: #d50d4b; font-size: 2.5rem;}
+section.new .inner .title .en2 {position: absolute; font-size: 5rem; color: #23614a; left: 50%; transform: translateX(-50%); margin-top: 90px;}
+
+/* title 공통 애니*/
+.motion .char {display: inline-block; animation: slide-up 0.4s cubic-bezier(.5, 0, .5, 1) both; animation-delay: calc(70ms * var(--char-index));}
+@keyframes slide-up {
+    0% {transform: translateY(30px); opacity: 0;}
+    30% {transform: translateY(30px); opacity: 0;}
+}
+
+/* menu */
+section.new .menu {position: relative;}
+section.new .menu ul {display: flex; position: absolute; left: 50%; transform: translateX(-50%); margin-top: 270px;}
+section.new .menu ul a {display: inline-block; width: 100%; height: 100%;}
+section.new .menu ul li {position: relative; width: 100%;}
+section.new .menu ul li h5 {font-size: 1.1rem; color: #d50d4b;}
+section.new .menu ul li p {color: #d50d4b; font-weight: bold;}
+section.new .menu ul li p span {color: #23614a;}
+section.new .menu .name {text-align: center; line-height: 1.7; margin-top: 15px; margin-right: 30px;}
+section.new .menu li:nth-child(2) .name {margin-right: 0;}
+
+/* menu img 애니 */
+section.new .menu .list.motion li {animation-name: beverageAni; animation-duration: 7s;}
+
+@keyframes beverageAni {
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+}
+
+section.new .menu .list.motion li:nth-child(1) {animation-duration: 0.9s;}
+section.new .menu .list.motion li:nth-child(2) {animation-duration: 1.9s;}
+section.new .menu .list.motion li:nth-child(3) {animation-duration: 2.9s;}
+
+/* bear & tree */
+section.new .bearAndTree img {position: absolute;}
+section.new .left img {bottom: -1%;}
+section.new .right img {right: 0; bottom: -5%;}
+section.new .left img:nth-child(1) {animation-name: bearAni1; animation-duration: 5s; animation-iteration-count: infinite;}
+section.new .right img:nth-child(1) {bottom: -1%; animation-name: bearAni2; animation-duration: 10s; animation-iteration-count: infinite;}
+
+/* bear 애니 */
+@keyframes bearAni1 {
+    0%{transform: translateX(0);}
+    50%{transform: translateX(50px);}
+}
+@keyframes bearAni2 {
+    0%{transform: translateX(0);}
+    50%{transform: translateX(-100px);}
+}
+
+/* section.specialMenu */
+section.specialMenu {height: 90vh; background:url(../img/section2/specialMenuBg.jpg)no-repeat center/cover; position: relative; overflow: hidden;  background-attachment : fixed;}
+section.specialMenu .inner {position: relative; width: 1000px; padding: 100px 120px;}
+section.specialMenu .inner .title {position: absolute; color: #fff;}
+section.specialMenu .inner .title div:nth-child(1) {font-size: 2.5rem;}
+section.specialMenu .inner .title div:nth-child(2) {font-size: 5.5rem;}
+section.specialMenu ul {width: 100%; height: 100%; color: #fff; margin: auto;}
+section.specialMenu ul li {position: absolute;}
+section.specialMenu ul li .img {position: absolute;}
+section.specialMenu ul li .img img{position: absolute;}
+section.specialMenu ul li .desc {width: 600px; height: 150px; position: absolute; line-height: 2; font-size: 1rem; letter-spacing: 0.5px;}
+section.specialMenu ul li a {position: relative; display: block; font-size: 1.1rem; margin-top: 20px; transition: all 0.15s; color: #fff; transform: skewX(-15deg) translateX(5px);}
+section.specialMenu ul li:nth-child(1) {right: 470px;}
+section.specialMenu ul li:nth-child(1) .desc {text-align: right; right: 5px; top: 50px;}
+section.specialMenu ul li:nth-child(1) .img:nth-child(1) {top: -50px;}
+section.specialMenu ul li:nth-child(1) .img:nth-child(2) {top: 200px; left: 200px;}
+section.specialMenu ul li:nth-child(1) a {right: 0;}
+section.specialMenu ul li:nth-child(2) {bottom: 480px; left: -5px;}
+section.specialMenu ul li:nth-child(2) .desc {left: 500px; bottom: -400px}
+section.specialMenu ul .cake img {transform: scaleX(-1);}
+
+/* section.special a 버튼 호버 */
+section.specialMenu ul li a:hover, section.specialMenu ul li a:focus {font-weight: 800; font-size: 1.2rem; transition: all 0.3s; color: #d50d4b; transform: skewX(0deg) translateX(0px); transition: all 0.15s;}
+section.specialMenu ul li a::before {content: ''; width: 80px; height: 1px; background: #fff; position: absolute; right: 0; bottom: 0px; transition: all 0.3s;}
+section.specialMenu ul li:nth-child(2) a::before {left: 0;}
+section.specialMenu ul li a:hover::before {background: #d50d4b; width: 120px; height: 1.5px;}
+
+/* specialmenu 애니 */
+section.specialMenu ul li.motion {animation-name: specialMenuAni2; animation-duration: 2s;}
+section.specialMenu ul li:nth-child(2).motion {animation-name: specialMenuAni; animation-duration: 3s;} 
+
+@keyframes specialMenuAni {
+    0%{transform: translateX(-200px); opacity: 0;}
+    30%{transform: translateX(-200px); opacity: 0;}
+}
+@keyframes specialMenuAni2 {
+    0%{transform: translateX(200px); opacity: 0;}
+    30%{transform: translateX(200px); opacity: 0;}
+}
+
+/* section.store */
+section.store {height: 75vh;}
+section.store .inner {width: 600px; position: absolute; margin-top: 50px; margin-left: 120px;}
+section.store .inner .title div:nth-child(1) {font-size: 2.5rem; color: #23614a; font-weight: 700;}
+section.store .inner .title div:nth-child(2) {font-size: 2.5rem; margin: 20px 0 80px;}
+section.store .inner .title p {font-size: 1.3rem;}
+section.store .inner .title a {font-size: 1.1rem; display: block; width: 100%; height: 100%; margin-top: 30px; position: relative; padding-left: 50px; transform: skewX(-15deg) translateX(5px); transition: all 0.15s;}
+section.store .inner .title a::before {content: ''; width: 42px; height: 1px; background: #333; position: absolute; left: 0; top: 45%;}
+section.store .inner .title a:hover, section.store .inner .title a:focus {transform: skewX(0deg) translateX(0px); font-weight: bold; font-size: 1.2rem; transition: all 0.3s;}
+section.store .inner .title a:hover::before {height: 2px;}
+
+/* title 한글 애니*/
+.motion .title p {animation: slide-up; animation-duration: 2s;}
+.motion .title a {animation: slide-up; animation-duration: 2s;}
+
+/* slideBox */
+section.store .slideBox {width: 1200px; margin: 0 auto; position: relative; height: 500px; margin-top: 150px;}
+section.store .slide {width: 1500px; position: absolute; right: -60%;}
+
+/* section.store .slide li {margin-right: 10px;} */
+section.store .slide li a {display: block; width: 80%; height: 500px; position: relative;}
+section.store .slide li .img {width: 100%; height: 100%; overflow: hidden; position: relative;}
+section.store .slide li .img  img {width: 100%; transition: all 2s;}
+
+/* slideBox prev next 버튼 */
+.slick-arrow {width: 80px; height: 30px; position: absolute; top: 76%; transform: translateY(-76%); left: -650px; z-index: 20; border: none; cursor: pointer; font-family: 'Bebas Neue', cursive; font-size: 1.2rem; color: #bbb; transition: all 0.5s;}
+.slick-next {left: -550px;}
+.slick-arrow:hover {color: #fff; background: #23614a; }
+.motion .slick-arrow {animation: slide-up; animation-duration: 2s;}
+
+/* slideImg hover 시 line */
+section.store .slide li a::before {content: ''; width: 0%; height: 6px; background: #f3de85; position: absolute; top: 0; left: 0; opacity: 0; z-index: 2; transition: all 0.3s;}
+section.store .slide li a::after {content: ''; width: 0%; height: 6px; background: #f3de85; position: absolute; bottom: 0; right: 0; opacity: 0; z-index: 2; transition: all 0.3s;}
+section.store .slide li a .img::before {content: ''; width: 6px; height: 0%; background: #f3de85; position: absolute; bottom: 0; left: 0; opacity: 0; z-index: 2; transition: all 0.3s;}
+section.store .slide li a .img::after {content: ''; width: 6px; height: 0%; background: #f3de85; position: absolute; bottom: 0; right: 0; opacity: 0; z-index: 2; transition: all 0.3s;}
+section.store .slide li a:hover::before, section.store .slide li a:hover::after {opacity: 1; width: 100%;}
+section.store .slide li a .img:hover::before, section.store .slide li a .img:hover::after {opacity: 1; height: 100%;}
+
+/* slideImg hover 시 검정박스 */
+section.store .slide li a:hover img {transform: scale(1.1);}
+section.store .slide li a .img span::before {content: ''; width: 100%; height: 100%; background: rgba(3, 3, 3, 0.4); position: absolute; left: 0; top: 0; opacity: 0; transition: all 0.3s; z-index: 1;}
+section.store .slide li a .img span:hover::before {opacity: 1;}
+section.store .slide li a .img span::after {content: ''; width: 45px; height: 45px; background: url(../img/section3/more.png)no-repeat center; border: 1px solid #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) scale(0); transition: all 0.4s; transition-delay: 0.15s; z-index: 2;}
+section.store .slide li a .img span:hover::after {transform: translate(-50%, -50%) scale(1);}
+
+/* section.product */
+section.product ul {width: 100%; height: 1800px; margin: auto; position: relative;}
+section.product ul li {position: absolute; z-index: 1;}
+section.product ul li p {width: 600px; height: 600px; overflow: hidden; border-radius: 50%; box-shadow: 4px 4px 10px rgba(0,0,0,0.2); transition: all 1s;}
+section.product ul li img {transition: all 1s;}
+section.product ul li:nth-child(1) {left: 200px; top: 500px;}
+section.product ul li:nth-child(2) {right: 200px; top: 150px;}
+section.product ul li:nth-child(3) {right: 300px; top: 1000px;}
+section.product ul li .txt h2 {color: #23614a; font-weight: 800;}
+section.product ul li .txt>a {display: block; width: 100%; height: 100%; margin-top: 5px; color: #feaabe; font-size: 1.1rem;}
+section.product .background img {position: absolute;}
+section.product .background img:first-child {left: -50px; top: 5%;}
+section.product .background img:last-child {right: -50px; top: 30%;}
+section.product ul li p:hover img {transform: scale(1.1);}
+
+/* product li img 애니 */
+section.product ul li.motion p {animation-name: productAni; animation-duration: 2.5s;}
+
+@keyframes productAni {
+    0% {transform: translateX(200px); opacity: 0;}
+    30% {transform: translateX(200px); opacity: 0;}
+}
+
+section.product ul li.motion:nth-child(1) p {animation-name: productAni2; animation-duration: 2.5s;}
+
+@keyframes productAni2 {
+    0% {transform: translateX(-200px); opacity: 0;}
+    30% {transform: translateX(-200px); opacity: 0;}
+}
+
+/* product 배경색 애니 */
+body {transition: all 0.4s;}
+body.on {background: #ddf9ee; transition: all 0.4s;}
+
+/* section.carrers */
+section.carrers {height: 70vh;}
+section.carrers .inner {width: 1300px; margin: 0 auto; position: relative;}
+section.carrers .inner .title {margin-top: 150px;}
+section.carrers .inner .title .en3 {font-size: 5rem; font-weight: 800;}
+section.carrers .inner p{display: inline; color: #f3de85;}
+section.carrers .inner p:nth-child(3) {display: block; margin-top: 80px; font-size: 1.3rem; color: #000;}
+section.carrers .inner a {font-size: 1.1rem; display: block; width: 100%; height: 100%; margin-top: 30px; position: relative; padding-left: 50px; transform: skewX(-15deg) translateX(5px); transition: all 0.15s;}
+section.carrers .inner .title a:hover, section.carrers .inner .title a:focus {transform: skewX(0deg) translateX(0px); font-weight: bold; font-size: 1.2rem; transition: all 0.3s;}
+section.carrers .inner .title a::before {content: ''; width: 42px; height: 1px; background: #333; position: absolute; left: 0; top: 45%;}
+section.carrers .inner .title a:hover::before {height: 2px;} 
+section.carrers .smileBox {position: absolute; right: 0; top: 90px; width: 210px; display: flex; flex-direction: column;}
+section.carrers .smileBox img {margin: 0 auto;}
+
+/* smile 애니 */
+section.carrers .smileBox img:nth-child(1), section.carrers .smileBox img:nth-child(3) {animation-name: smileAni; animation-duration: 2s; animation-iteration-count: infinite;}
+section.carrers .smileBox img:nth-child(2) {animation-name: smileAni2; animation-duration: 2s; animation-iteration-count: infinite;}
+
+/* footer */
+footer {width: 1700px; margin: auto;}
+footer .bottom {padding: 40px 0 100px; border-top: 1px solid #e6e6e6;}
+footer .bottom ul {overflow: hidden;}
+footer .bottom ul li {float: left; width: 20%; color: #aaa; font-size: 12px; line-height: 2;}
+footer .bottom ul li:nth-child(1) {width: 40%; padding-left: 170px;}
+footer .bottom ul li b{color: #333; font-weight: 800;}
+footer .bottom ul li b:nth-child(1) {margin-bottom: 12px; display: inline-block; font-size: 14px; color: #333;}
+footer .bottom ul li a:hover {color: #23614a; transition: all 0.5s;}
+
+/* menuOpen */
+.menuOpen button.open {background: none; border: none; position: fixed; z-index: 100; right: -40px; top: 115%; transform: translateY(-115%); transition: all 0.3s;}
+.menuOpen button.open:hover,.menuOpen button.open:focus {right: -10px;}
+.menuOpen button.open h3 {position: absolute; top: 0; left: 150px; color: #fff; animation-name: clickmeAni; animation-duration: 1.5s; animation-iteration-count: infinite;}
+@keyframes clickmeAni {
+    0% {top: 0px;}
+    50% {top: -10px;}
+}
+.menuOpen .menuWrap {width: 100%; height: 100vh; position: fixed; top: 0; right: 0; z-index: 100; background: #feaabe}
+.menuOpen .menuWrap ul {color: #fff; position: absolute; top: 50%; left: 25%; transform: translateY(-50%);font-size: 3.5rem;}
+.menuOpen .menuWrap ul li a {display: inline-block; margin-bottom: 20px; position: relative; transition: all 0.3s;}
+.menuOpen .menuWrap ul li a::after {content: ''; width: 0%; height: 2px; background: #23614a; position: absolute; left: 0; bottom: -5px; transition: all 0.3s;}
+.menuOpen .menuWrap ul li a:hover, .menuOpen .menuWrap ul li a:focus {transform: translateX(30px); color: #23614a;}
+.menuOpen .menuWrap ul li a:hover::after,
+.menuOpen .menuWrap ul li a:focus::after {width: 100%;}
+
+/* close */
+.menuOpen .menuWrap .close:nth-child(1) {position: absolute; top: 50%; transform: translateY(-50%); left: 30px;}
+.menuOpen .menuWrap .close.en1 {position: absolute; right: 50px; top: 50px; font-size: 25px; border-bottom: 1px solid #fff; color: #fff; transition: all 0.3s; cursor: pointer;}
+.menuOpen .menuWrap .close.en1:hover {border-bottom: 1px solid #23614a; color: #23614a;}
+
+/* menuOpen 열기 */
+.menuOpen .menuWrap {width: 0; transition: all 0s; transform: skewY(40deg); opacity: 0;}
+.menuOpen .menuWrap.on {width: 35%; transform: skewY(0); transition: all 0.5s; opacity: 1;}

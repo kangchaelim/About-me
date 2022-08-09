@@ -1,0 +1,217 @@
+/* main.visual */
+main.visual {
+    width: 100%;
+    height: 100vh;
+}
+
+main.visual .main {
+    width: 460px;
+    height: 280px;
+    /* border: 1px solid red; */
+    left: 50%;
+    top: 31%;
+    transform: translate(-50%, -31%);
+}
+
+main.visual .main .handmade {
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -55%);
+}
+
+main.visual .main .black-shelf {
+    width: inherit;
+    height: 4px;
+    background: black;
+    z-index: 10;
+}
+
+main.visual .main .black-shelf:nth-child(1) {
+    top: 32%;
+}
+
+main.visual .main .black-shelf:nth-child(2) {
+    bottom: 0;
+}
+
+main.visual .logo {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+
+/* plate 위치 잡기 */
+main.visual .button a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#col1 {
+    top: 24px;
+    left: 85px;
+}
+
+#col2 {
+    top: 24px;
+    left: 50px;
+}
+
+#island1 {
+    top: 8px;
+    right: 30px;
+}
+
+#island2 {
+    top: 8px;
+    right: 70px;
+}
+
+#kids1 {
+    bottom: 0;
+    left: 18px;
+}
+
+#kids2 {
+    bottom: 0;
+    left: 48px;
+}
+
+#kids3 {
+    bottom: 0;
+    left: 78px;
+}
+
+#marbling {
+    bottom: -2px;
+    right: 150px;
+}
+
+#classic {
+    bottom: -2px;
+    right: 15px;
+}
+
+/* plateTxt */
+.plateTxt {
+    width: 650px;
+    height: 300px;
+    /* border: 1px solid red; */
+}
+
+.lineBox {
+    width: 520px;
+    height: 220px;
+    border: 0.2px solid rgb(129, 129, 129);
+    top: 40px;
+    left: 40px;
+    padding-top: 85px;
+    padding-left: 35px;
+}
+
+.plateTxt h3 {
+    font-size: 1.5em;
+    top: 70px;
+}
+
+.plateTxt span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.plateTxt p {
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+
+/* collorama */
+#colTxt {
+    top: 10vh;
+    left: 3vw;
+}
+
+.col-img {
+    top: 7.8vh;
+    right: 0.5vw;
+}
+
+/* kids and family */
+#kidTxt {
+    top: 30vh;
+    left: 3vw;
+}
+
+.kid-img {
+    top: 6.2vh;
+    right: 0.8vw;
+}
+
+/* new marble */
+#marTxt {
+    top: 52vh;
+    left: 34vw;
+}
+
+.mar-img {
+    top: 7.5vh;
+    right: 0.4vw;
+}
+
+/* island breeze */
+#islTxt {
+    top: 10vh;
+    right: 2vw;
+}
+
+.isl-img {
+    top: 5.5vh;
+    right: 0.9vw;
+}
+
+/* classic marble */
+#claTxt {
+    top: 30vh;
+    right: 2vw;
+}
+
+.cla-img {
+    top: 7.5vh;
+    right: 0.3vw;
+}
+
+/* shop now */
+.shop-now {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#shop1 {
+    top: 45px;
+    left: 50px;
+}
+
+#shop2 {
+    top: 40px;
+    right: 45px;
+}
+
+#shop3 {
+    top: 225px;
+    left: 43px;
+}
+
+#shop4 {
+    top: 225px;
+    right: 145px;
+}
+
+#shop5 {
+    top: 225px;
+    right: 8px;
+}

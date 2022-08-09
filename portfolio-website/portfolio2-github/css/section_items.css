@@ -1,0 +1,95 @@
+/* items */
+#items {
+    width: 70vw;
+    height: 100vh;
+    /* border: 1px solid red; */
+    margin: 0 auto; 
+}
+
+#items #best-item {
+    width: inherit;
+    height: 50vh;
+    /* border: 1px solid red; */
+}
+
+#items #new-item {
+    width: inherit;
+    height: 50vh;
+    /* border: 1px solid red; */
+}
+
+#items #best-item-box {
+    width: 50vw;
+    height: 40vh;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    right: 0;
+    bottom: 0;
+}
+
+.item-direct {
+    font-size: 1.5em;
+}
+
+#items #best-item>a {
+    top: 200px;
+    left: 55px;
+}
+
+#circle1 {
+    left: 63px;
+    top: 163px;
+}
+
+#items #new-item-box {
+    width: 50vw;
+    height: 40vh;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    bottom: 0;
+}
+
+#items #new-item a {
+    top: 200px;
+    right: 55px;
+}
+
+#circle2 {
+    right: 63px;
+    top: 163px;
+}
+
+#items>div>div>div {
+    width: 15vw;
+    height: 40vh;
+    /* border: 1px solid red; */
+} 
+
+#items .item-img-box {
+    text-align: center;
+}
+
+.itemImg {
+    width: inherit;
+    height: 25vh;
+}
+
+.itemTxt {
+    width: inherit;
+    height: 10vh;
+    /* border: 1px solid red; */
+    bottom: 0;
+    font-size: 0.9em;
+}
+
+.itemTxt h5 {
+    margin-bottom: 3vh;
+}
+
+.itemTxt span {
+    color: #999;
+}
+
+.itemTxt p {
+    margin-top: 1vh;
+}

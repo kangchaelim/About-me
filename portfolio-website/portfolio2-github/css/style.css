@@ -1,0 +1,59 @@
+/* font */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@300&family=Noto+Sans+KR&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+/* init */
+*{margin: 0;padding: 0;box-sizing: border-box;color: #333333;font-family: '나눔스퀘어';}
+ul, li {list-style: none;}
+a{text-decoration: none;color: inherit;}
+body {overflow-x: hidden;}
+
+/* re */
+.po-ab {position: absolute;}
+.po-re {position: relative;}
+.dis-flex {display: flex;}
+.hidden {display: none;}
+.block {display: block;}
+.opa-0 {opacity: 0;}
+.opa-1 {opacity: 1;}
+.trans-scale-2 {transform: scale(1.1);}
+.trans-scale-1 {transform: scale(1);}
+
+/* scroll 시 */
+section {
+    transition: 1500ms;
+    margin-top: 10vh;
+    opacity: 0;
+}
+
+#marbling-imgbox div {
+    transition: 600ms;
+}
+
+.shop-now {
+    transition: 500ms;
+}
+
+.plateTxt {
+    transition: 500ms;
+}
+
+#brand img {
+    transition: 800ms;
+}
+
+/* #items>div {
+    transition: 1500ms;
+} */
+
+.item {
+    opacity: 0;
+    margin-top: 10vh;
+    transition: 1500ms;
+}
+.itemRe {
+    opacity: 1;
+    margin-top: 0vh;
+    transition: 1500ms;
+}

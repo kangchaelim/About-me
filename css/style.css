@@ -1,36 +1,457 @@
-/* init */
-*{margin: 0;padding: 0;box-sizing: border-box;}
-ul,li {list-style: none;}
-a{text-decoration: none;color: inherit;}
-body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
 /* font */
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Montagu+Slab:wght@300&family=Noto+Sans+KR&family=Roboto:wght@700&display=swap');
+
+/* font-family: 'Cormorant Garamond', serif;
+font-family: '나눔스퀘어'; */
+
+/* init */
+*{margin: 0;padding: 0; box-sizing: border-box;}
+ul,li {list-style: none;}
+a{text-decoration: none; color: inherit;}
+body {overflow-x: hidden; overflow-y: hidden;}
 
 /* re */
 .po-re {position: relative;}
 .po-ab {position: absolute;}
 .dis-flex {display: flex;}
-.hidden{display: none;}
-.block{display: block;}
+.hidden {display: none;}
+.block {display: block;}
 .opa-0 {opacity: 0;}
 .opa-1 {opacity: 1;}
+.top-100 {top: 100%;}
+.top-0 {top: 0;}
 
 /* layout */
-/* container */
-.container {
-    width: 600vw;
+.cont {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
     height: 100vh;
+    left: 0;
 }
 
-/* section */
-section {
-    width:  100vw;
-    height: 100vh;
+/* cont_1 */
+#cont_1 {
+    position: relative;
+    background: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5vw;
+    color: #000;
+    border-left: 10px double #fc073f;
+    border-right: 10px double #fc073f;
+}
+
+#cont_1 div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 3s;
+}
+
+#cont_1 span {
+    position: absolute;
+    color: #fc073f;
+    transform: rotate(-180deg) scaleX(-1);
+    display: inline-block;
+}
+
+#cont_1 .up:first-child {
+    left: -3.5vw;
+    transition: 1.5s;
+}
+
+#cont_1 .up:last-child {
+    left: 27vw;
+    transition: 1.5s;
+}
+
+#cont_1 .down {
+    left: 12.5vw;
+    transition: 1.5s;
+}
+
+#cont_1 .up {
+    margin-top: 7vh;
+}
+
+/* cont_2 */
+#cont_2 {
+    top: 100%;
+    background: #fff;
+    transition: top 1s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    transition: transform .3s;
     /* border: 1px solid red; */
-    background-color: #fff;
+}
+
+#content li {
+    position: relative;
+    background: #fff;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07), 0 6px 22px 0 rgba(0, 0, 0, 0.07);
+    transition: 0.5s;
+    margin-right: 50px;
+    font-size: 3.3rem;
+    font-family: 'Cormorant Garamond', serif;
+    transition: all 0.5s;
+}
+
+#content li:last-child {
+    margin-right: 0;
+}
+
+#content li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#content li a div::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+#content li a div:hover::after {
+    opacity: 0;
+}
+
+#content li span {
+    transform: rotate(-180deg) scaleX(-1);
+    display: inline-block;
+    color: #fc073f;
+    top: 0;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+#content li p {
+    right: 0;
+    top: -7vh;
+    z-index: 2;
 } 
+
+#content li:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07), 0 6px 22px 0 rgba(0, 0, 0, 0.15);
+}
+
+#content li img {
+    width: 100%;
+}
+
+/* modal */
+.top-100 {top: 100%;}
+.top-0 {top: 0;}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 100;
+    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    border-left: 10px double #fc073f;
+    border-right: 10px double #fc073f;
+}
+
+.modal button {
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: url(../img/close-button.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 200ms linear
+}
+
+.modal button:hover {
+    transform: rotate(90deg);    
+}
+
+/* #whoAmI */
+#whoAmI .aboutMe {
+    width: inherit;
+    height: inherit;
+    justify-content: space-around;
+    align-items: center;
+    font-family: '나눔스퀘어';
+    font-weight: bold;
+}
+
+#whoAmI .aboutMe h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    margin-bottom: 4vh;
+    color: #000;
+}
+
+#whoAmI .aboutMe span {
+    color: #fc073f;
+}
+
+#whoAmI .introduce p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#whoAmI .introduce b {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fc073f;
+    font-weight: bolder;
+}
+
+/* #activities */
+#activities .record {
+    width: inherit;
+    height: inherit;
+    justify-content: space-around;
+    align-items: center;
+    font-family: '나눔스퀘어';
+}
+
+#activities .record div {
+    font-weight: bold;
+}
+
+#activities .record h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    margin-bottom: 4vh;
+    color: #000;
+}
+
+#activities .record span {
+    color: #fc073f;
+}
+
+#activities .introduce p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#activities .introduce b {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fc073f;
+    font-weight: bolder;
+}
+
+/* #webSite */
+#webSite .toyProject {
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    font-family: '나눔스퀘어';
+    text-align: center;
+    font-weight: bold;
+}
+
+#webSite .toyProject h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    margin-bottom: 2vh;
+    color: #000;
+}
+
+#webSite .toyProject span {
+    color: #fc073f;
+}
+
+#webSite .toyProject p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#webSite .toyProject .portfolio {
+    width: inherit;
+    height: inherit;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+#webSite .toyProject .portfolio ul {
+    justify-content: center;
+}
+
+#webSite .toyProject .portfolio li {
+    width: 400px;
+    height: 225px;
+    margin-right: 1vw;
+    margin-top: 1vh;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07), 0 6px 22px 0 rgba(0, 0, 0, 0.07);
+    transition: all 0.5s;
+}
+
+#webSite .toyProject .portfolio li:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07), 0 6px 22px 0 rgba(0, 0, 0, 0.15);
+    margin-top: -2vh;
+}
+
+#webSite .toyProject .portfolio li :last-child {
+    margin-right: 0;
+}
+
+#webSite .toyProject .portfolio li img {
+    width: 100%;
+}
+
+#webSite .toyProject .portfolio li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#webSite .toyProject .portfolio .desc {
+    margin-top: 2vh;
+    color: #fc073f;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+#webSite .toyProject .portfolio li span::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+#webSite .toyProject .portfolio li span:hover::before {
+    opacity: 1;
+}
+
+#webSite .toyProject .portfolio li span::after {
+    width: 80%;
+    height: inherit;
+    content: '해외 본 사이트에는 해당 그릇의 독특한 그릇제조법에 대한 설명, 그릇에 대한 정보가 충분히 나와 있었으나 한국으로 넘어오면서 설명이 생략되고 판매 위주 사이트가 되었습니다. 소비자들에게 구매하는 제품에 대한 충분한 설명, 정보를 제공하고자 사이트를 다음과 같이 리뉴얼해보았습니다.';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.4s;
+    transition-delay: 0.15s;
+    z-index: 2;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: normal;
+}
+
+#webSite .toyProject .portfolio li span:hover::after {transform: translate(-50%, -50%) scale(1);}
+
+#webSite .toyProject .portfolio li:nth-child(2) span::after {content:'카페 노티드사이트를 제작했습니다. 그 동안 인스타그램 계정에서만 확인할 수 있었던 공지사항, 채용공고, 예약문의, 신메뉴 정보를 확인할 수 있습니다. 또한 타 사이트에서만 구매가 가능했던 굿즈, 메이드 제품들을 만나볼 수 있습니다.';}
+#webSite .toyProject .portfolio li:nth-child(3) span::after {content:'카테고리를 재분류하고 땡스북스만의 분위기를 살려 리디자인 했습니다. 부트스트랩과 미디어쿼리를 사용해 반응형 사이트로 제작했습니다.';}
+#webSite .toyProject .portfolio li:last-child span::after {content:'SBW funiture의 의자 판매 전용 사이트를 제작했습니다. gsap 파일 첨부로 인해 파일 로딩이 길어질 수 있습니다.';}
+
+/* #design */
+#design h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    margin-bottom: 2vh;
+    color: #000;
+    position: absolute;
+    top: 10vh;
+    left: 5%;
+}
+
+#design span {
+    color: #fc073f;
+}
+
+#slider{
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    height: 300px;
+    top: calc(60% - 150px);
+    left: 10vw;
+    transition: transform .3s;
+}
+
+#slider li{
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative; 
+    /* overflow:hidden; */
+    height:100%;
+    aspect-ratio:1/1;
+    margin:0 200px 0 0;
+    /* border:1px solid black; */
+    transition:transform .2s;
+}
+
+#slider li:last-child {
+    margin-left: 200px;
+}
+
+/* responsive */
+@media screen and (max-width:1400px){
+    #cont_2 {flex-direction: column;}
+    #whoAmI .aboutMe {flex-direction: column; text-align: center;}
+    #whoAmI img {width: 80%;}
+    #whoAmI .introduce p {font-size: 1rem;}
+    #whoAmI .introduce b {font-size: 1rem;}
+    #whoAmI .aboutMe h3 {font-size: 3rem; margin-bottom: 3vh;}
+    #activities .record {flex-direction: column; text-align: center;}
+    #activities img {width: 85%;}
+    #activities .introduce p {font-size: 1rem;}
+    #activities .introduce b {font-size: 1rem;}
+    #activities .record h3 {font-size: 3rem; margin-bottom: 3vh;}
+    #webSite .toyProject h3 {font-size: 3rem;}
+    #webSite .toyProject p {font-size: 1rem;}
+    #webSite .toyProject .portfolio ul {flex-wrap: wrap;}
+    #webSite .toyProject .portfolio {margin-top: 2vh;}
+    #webSite .toyProject .portfolio li {width: 300px; height: 170px;}
+    #webSite .toyProject .portfolio li:hover {margin-top: 1vh;}
+    #webSite .toyProject .portfolio li span::after {font-size: 0.8rem;}
+    #webSite .toyProject .portfolio .desc {display: none;}
+    #design h3 {font-size: 3rem;}
+}
+
+@media screen and (max-width:767px) {
+    #content li {width: 250px; height: 250px; font-size: 2.9rem;}
+    #whoAmI .aboutMe h3 {margin-bottom: 2vh;}
+    #activities img {width: 75%;}
+    #webSite .toyProject .portfolio {margin-top: 2vh;}
+    #webSite .toyProject .portfolio li {width: 300px; height: 170px;}
+}

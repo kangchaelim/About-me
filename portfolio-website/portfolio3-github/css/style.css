@@ -1,0 +1,448 @@
+/* init */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul,li {list-style: none;}
+a{text-decoration: none;color: inherit;}
+body {
+    overflow-x: hidden;
+    margin-right: 0
+}
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@font-face {
+    font-family: 'ACCchildrensky';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112-2@1.0/ACCchildrensky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* re */
+.po-re {position: relative;}
+.po-ab {position: absolute;}
+.dis-flex {display: flex;}
+.hidden{display: none;}
+.block{display: block;}
+.opa-0 {opacity: 0;}
+.opa-1 {opacity: 1;}
+.hei0{height: 0;}
+.hei100{height: 100%;}
+
+/* layout */
+main {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+/* navbar */
+#mainNavbar {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#mainNavbar .nav-link {
+    color: black;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #2b2b2b;
+}
+
+.navbar.scrolled {
+    background-color: #ffff01;
+    transition: 0.5s;
+}
+
+/* 글귀 & 책장 */
+.quotes {
+    font-family: 'ACCchildrensky';
+    font-size: 1.5rem;
+    margin-top: 400px;
+}
+
+.quotes p:last-child{
+    font-size: 1.3rem;
+}
+
+.yellowBg {
+    background-color: #ffff01;
+    border: 2px solid #ffff01;
+    width: 180px;
+    height: 180px;
+    transform: rotate(180deg);
+}
+
+.yellowBor {
+    border: 2px solid #ffff01;
+    height: 180px;
+    width: 180px;
+    transform: rotate(180deg);
+}
+
+.yellowBor:nth-child(2) {
+    z-index: -1;
+}
+
+.bookshelf {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 290px
+}
+
+.bear {
+    margin-top: -35px;
+    left: -15px;
+    z-index: 10;
+}
+
+.bookshelf img {
+    top: -5px;
+    right: -0.2px;
+    transform: rotate(180deg);
+}
+
+.bookshelf div:last-child .book6 {
+    right: 42px;
+}
+
+.bookshelf div:last-child .clock {
+    top: 10px;
+    right: 5px;
+}
+
+.bookshelf div:nth-child(2) div:last-child {
+    overflow: hidden;
+    text-align: center;
+}
+
+.bookshelf div:nth-child(2) div:last-child img{
+    width: 100%;
+    height: 100%;
+}
+.bookshelf div.row:nth-child(2) div:nth-child(3) {
+    background: #ffff01;
+}
+
+/* 자바스크립트 이용 */
+.bookHeight {
+    width: 100%;
+    height: 0;
+    transition: 2.5s;
+    /* transform: rotate(-180deg); */
+}
+
+/* section.about */
+.about {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    font-family: 'ACCchildrensky';
+    background-color: #fff;
+    color: #fff;
+    overflow: hidden;
+}
+
+.about img {
+    position: absolute;
+    bottom: -3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.about .introduce {
+    width: 850px;
+    background: #000;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 90px 0 150px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+.about h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.about p {
+    font-size: 1.3rem;
+    margin-top: 50px;
+    line-height: 2.5rem;
+}
+
+.about b {
+    font-size: 1.3rem;
+    margin-top: 50px;
+    line-height: 2.5rem;
+}
+
+/* 자바스크립트 이용 */
+.aboutTxt {
+    opacity: 0;
+    margin-top: 10vh;
+    transition: 2s;
+    z-index: 1;
+    color: #fff;
+}
+
+/* 눈송이 만들기 */
+.about span{
+    position: absolute;
+    pointer-events: none;
+    background-color: #fff;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* section.selection */
+section.selection {
+    width: 100%;
+    height: 50vh;
+}
+
+.selectionBox {
+    margin-top: 350px;
+    overflow: hidden;
+}
+
+.selectionBox img{
+    width: 100%;
+}
+
+.selectionBox div {
+    justify-content: space-evenly;
+}
+
+.selectionBox div div {
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid red; */
+}
+
+section.selection a {display: block; overflow: hidden;position: relative;}
+section.selection a img {transition: all 2s;}
+section.selection a:hover img {transform: scale(1.1);}
+section.selection a span::before {content: ''; width: 100%; height: 100%; background: rgba(3, 3, 3, 0.4); position: absolute; left: 0; top: 0; opacity: 0; transition: all 0.3s; z-index: 1;}
+section.selection a span:hover::before {opacity: 1;}
+section.selection a span::after {content: '취향의 연결'; width: 200px; height: 100px; background: url(../img/section2/icon.png)no-repeat center; position: absolute; left: 50%; top: 63%; transform: translate(-50%, -63%) scale(0); transition: all 0.4s; transition-delay: 0.15s; z-index: 2; color: #fff; font-size: 1.8rem; line-height: 0.5;   font-family: 'ACCchildrensky';}
+section.selection a span:hover::after {transform: translate(-50%, -50%) scale(1);}
+section.selection .select2 span::after{content:'땡스, 페이퍼!';}
+section.selection .select3 span::after{content:'땡스, 초이스!';}
+section.selection .select4 span::after{content:'금주의 책';}
+
+/* bird & sticker & h3 위치잡기 */
+.selectionTitle {
+    width: 200px;
+    height: 180px;
+    /* border: 1px solid red; */
+    top: -220px;
+    z-index: 1;
+    transition: 4s;
+    opacity: 0;
+}
+
+.selection h3 {
+    font-family: 'ACCchildrensky';
+    font-weight: bolder;
+    top: 55%;
+    left: 10%;
+    transform: translate(-10%, -55%);
+    transform: rotate(17deg);
+    z-index: 1;
+} 
+
+.selection .bird {
+    top: 0%;
+    left: 40%;
+    transform: translate(-40%, 0%);
+    z-index: 2;
+}
+
+.selection .sticker {
+    top: 85%;
+    left: 0%;
+    transform: translate(0%, -85%);
+    z-index: 1;
+}
+.selection .selectionBox>div:first-child {
+    right: -24px;
+}
+
+.selection .selectionBox>div:last-child {
+    left: -24px;
+}
+
+/* section.selectionTwo */
+.selectionTwo {
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid red; */
+}
+
+/* 책장, 메모, 책 자리잡기 */
+.bookshelfTwo {
+    width: 650px;
+    height: 200px;
+    /* border: 1px solid red; */
+    top: 400px;
+    left: 200px;
+}
+
+.yellow-shelf {
+    width: 100%;
+    height: 15px;
+    background-color: yellow;
+    bottom: 0;
+}
+
+.memo1 {
+    top: 170px;
+    left: 30px;
+}
+
+.memo2 {
+    top: 20px;
+    left: 400px;
+}
+
+.memo3 {
+    top: 100px;
+    right: 0;
+    z-index: 1;
+}
+
+/* .record {
+    top: 290px;
+    right: 140px;
+} */
+
+.book-left-box {
+    width: 170px;
+    height: 170px;
+    left: 0;
+    bottom: 0;
+    /* border: 1px solid red; */
+    transform: rotate(180deg);
+}
+
+.book-right-box {
+    width: 170px;
+    height: 170px;
+    right: 0;
+    bottom: 0;
+    /* border: 1px solid red; */
+    transform: rotate(180deg);
+}
+
+.bookshelfTwo img{
+    width: 100%;
+    height: 0;
+    transition: 2.5s;
+    transform: rotate(180deg);
+}
+
+.selectionTwo h3 {  
+    font-weight: bolder;
+}
+
+.selectionTwo a {
+    font-family: 'ACCchildrensky';
+    text-decoration: none;
+}
+
+.bookshelfTwo a {
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.selectionTwo a:hover {
+    color: #2b2b2b;
+}
+
+/* section.exhibition */
+.exhibition {
+    width: 100vw;
+    height: 90vh;
+    /* border: 1px solid red; */
+}
+
+.exhibition a {
+    text-decoration: none;
+}
+.exhibition a:hover {
+    color: #2b2b2b;
+}
+
+.exhibition h3 {
+    font-family: 'ACCchildrensky';
+    font-weight: bolder;
+}
+
+.exhibition p {
+    font-family: 'ACCchildrensky';
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+.exhibition>div>div:first-child {
+    padding-top: 240px;
+}
+
+.exhibition>div>div:last-child {
+    padding-top: 270px;
+}
+
+.exhibition .sticker2 {
+    z-index: 1;
+    left: 0;
+    top: 180px;
+} 
+
+/* 자바스크립트 효과 */
+.exhibitionTxt {
+    opacity: 0;
+    margin-top: 10vh;
+    transition: 2s;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 45vh;
+    /* border: 1px solid red; */
+    padding-top: 60px;
+}
+
+footer span {
+    display: block;
+    color: #2b2b2b;
+    font-size: 0.8rem;
+}
+
+footer b {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 0.8rem;
+    margin: 8px;
+}
