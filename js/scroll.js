@@ -58,9 +58,6 @@ for(let i = 0; i < content.length ; i++){
     content[i].addEventListener('mouseenter', function(){
         contentTxt[i].style.top = '-7vh';
     });
-}
-
-for(let i = 0; i < content.length ; i++){
     content[i].addEventListener('mouseleave', function(){
         contentTxt[i].style.top = '0';
     });
@@ -78,6 +75,21 @@ for(let k = 0; k < closeBtn.length ; k++){
     });
         closeBtn[k].addEventListener('click', ()=>{
         modal[k].classList.replace('top-0', 'top-100')
+    });
+}
+
+// 각 website 호버시 사용언어 등장
+const website = document.querySelectorAll('#webSite .toyProject .portfolio li');
+console.log(closeBtn);
+const desc = document.querySelectorAll('#webSite .toyProject .portfolio li .desc');
+console.log(modal);
+
+for(let i = 0; i < content.length ; i++){
+    website[i].addEventListener('mouseenter', function(){
+        desc[i].style.opacity = '1';
+    });
+    website[i].addEventListener('mouseleave', function(){
+        desc[i].style.opacity = '0';
     });
 }
 

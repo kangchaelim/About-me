@@ -339,6 +339,8 @@ body {overflow-x: hidden; overflow-y: hidden;}
     color: #fc073f;
     font-weight: bolder;
     font-size: 1.1rem;
+    opacity: 0;
+    transition: all 0.5s;
 }
 
 #webSite .toyProject .portfolio li span::before {
@@ -364,8 +366,9 @@ body {overflow-x: hidden; overflow-y: hidden;}
     content: '해외 본 사이트에는 해당 그릇의 독특한 그릇제조법에 대한 설명, 그릇에 대한 정보가 충분히 나와 있었으나 한국으로 넘어오면서 설명이 생략되고 판매 위주 사이트가 되었습니다. 소비자들에게 구매하는 제품에 대한 충분한 설명, 정보를 제공하고자 사이트를 다음과 같이 리뉴얼해보았습니다.';
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    top: 70%;
+    transform: translate(-50%, -70%);
+    opacity: 0;
     transition: all 0.4s;
     transition-delay: 0.15s;
     z-index: 2;
@@ -375,7 +378,9 @@ body {overflow-x: hidden; overflow-y: hidden;}
     font-weight: normal;
 }
 
-#webSite .toyProject .portfolio li span:hover::after {transform: translate(-50%, -50%) scale(1);}
+#webSite .toyProject .portfolio li span:hover::after {opacity: 1; left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)}
 
 #webSite .toyProject .portfolio li:nth-child(2) span::after {content:'카페 노티드사이트를 제작했습니다. 그 동안 인스타그램 계정에서만 확인할 수 있었던 공지사항, 채용공고, 예약문의, 신메뉴 정보를 확인할 수 있습니다. 또한 타 사이트에서만 구매가 가능했던 굿즈, 메이드 제품들을 만나볼 수 있습니다.';}
 #webSite .toyProject .portfolio li:nth-child(3) span::after {content:'카테고리를 재분류하고 땡스북스만의 분위기를 살려 리디자인 했습니다. 부트스트랩과 미디어쿼리를 사용해 반응형 사이트로 제작했습니다.';}
