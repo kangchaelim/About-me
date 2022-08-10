@@ -221,10 +221,14 @@ body {overflow-x: hidden; overflow-y: hidden;}
 }
 
 #whoAmI .introduce b {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1.4rem;
+    line-height: 1.7;
     color: #fc073f;
     font-weight: bolder;
+}
+
+#whoAmI .introduce .contact {
+    margin-top: 2vh;
 }
 
 /* #activities */
@@ -257,8 +261,7 @@ body {overflow-x: hidden; overflow-y: hidden;}
 }
 
 #activities .introduce b {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1.8rem;
     color: #fc073f;
     font-weight: bolder;
 }
@@ -336,11 +339,16 @@ body {overflow-x: hidden; overflow-y: hidden;}
 
 #webSite .toyProject .portfolio .desc {
     margin-top: 2vh;
-    color: #fc073f;
+    color: #000;
     font-weight: bolder;
     font-size: 1.1rem;
     opacity: 0;
     transition: all 0.5s;
+}
+
+#webSite .toyProject .portfolio .desc i {
+    font-size: 1.5rem;
+    color: #fc073f;
 }
 
 #webSite .toyProject .portfolio li span::before {
@@ -439,12 +447,13 @@ body {overflow-x: hidden; overflow-y: hidden;}
     #whoAmI .aboutMe {flex-direction: column; text-align: center;}
     #whoAmI img {width: 80%;}
     #whoAmI .introduce p {font-size: 1rem;}
-    #whoAmI .introduce b {font-size: 1rem;}
+    #whoAmI .introduce b {font-size: 1.2rem;}
     #whoAmI .aboutMe h3 {font-size: 3rem; margin-bottom: 3vh;}
+    #whoAmI .introduce .contact {margin-top: 1vh;}
     #activities .record {flex-direction: column; text-align: center;}
     #activities img {width: 85%;}
     #activities .introduce p {font-size: 1rem;}
-    #activities .introduce b {font-size: 1rem;}
+    #activities .introduce b {font-size: 1.4rem;}
     #activities .record h3 {font-size: 3rem; margin-bottom: 3vh;}
     #webSite .toyProject h3 {font-size: 3rem;}
     #webSite .toyProject p {font-size: 1rem;}
