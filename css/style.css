@@ -425,6 +425,10 @@ body {overflow-x: hidden; overflow-y: hidden;}
     transition:transform .2s;
 }
 
+#slider li:nth-child(6) {
+    margin-left: 200px;
+}
+
 #slider li:last-child {
     margin-left: 200px;
 }
