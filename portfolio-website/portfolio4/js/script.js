@@ -1,7 +1,10 @@
 // mainImg 효과
 const designer = document.querySelector('.designer');
+const chairs = document.querySelector('.chairs');
+
 setInterval(()=>{
   designer.style.opacity = '0';
+  chairs.style.opacity = '1';
 }, 3000);
  
 // mainTxt 효과 & 동그라미 버튼 
@@ -12,7 +15,7 @@ for(let k=0; k < title.querySelectorAll('div').length; k++){
       
   let text = title.querySelectorAll('div')[k];
 
-      TweenMax.from( text , 1, {
+      TweenMax.from( text , 2, {
       autoAlpha: 0,
       delay : Math.random()*1.5,
       ease: Power3.easeInOut 
@@ -23,7 +26,7 @@ let section = document.getElementsByTagName("section");
 let pointBtn = document.querySelectorAll(".pointWrap li");
 let pageNum = 0;
 let totalNum = section.length
-for( let i = 0; i < pointBtn.length; i++ ){
+for( let i = 0; i < pointBtn.length; i++){
       (function(idx) {
           pointBtn[idx].onclick = function() {
               pageNum = idx;

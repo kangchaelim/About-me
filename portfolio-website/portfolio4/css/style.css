@@ -1,10 +1,10 @@
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Edu+QLD+Beginner:wght@400;500&family=Nabla&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /* font-family: 'Edu QLD Beginner', cursive;
 font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: "Engravers MT" */
+font-family: 'Raleway', sans-serif; 
+font-family: 'Cormorant Garamond', serif; */
 
 /*reset*/
 * {margin: 0;padding: 0; box-sizing: border-box;}
@@ -31,40 +31,41 @@ section {
 
 /* section.main */
 section.main h1.title {
-  width: 900px;
+  width: 1050px;
   position: relative;
-  top: 75%;
-  left: 68%;
-  transform: translate(-68%, -75%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   text-align: left;
-  font-size: 80px;
-  font-family: "Engravers MT";
-  font-weight: lighter;
+  font-size: 90px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 200;
   z-index: 100;
 }
 
-section.main .title div {
+section.main h1.title div {
   display: inline-block;
-  letter-spacing: -18px;
+  letter-spacing: -10px;
 }
 
 section .mainImg {
   position: absolute;
-  transition: all 1s;
+  transition: all 1.5s;
 }
 
 section .designer {
+  top: 50%;
   left: 50%;
-  top: 30%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -50%);
   z-index: 10;
 }
 
 section .chairs {
+  top: 50%;
   left: 50%;
-  top: 30%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 /* section.about */
